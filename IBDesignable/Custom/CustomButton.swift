@@ -1,5 +1,5 @@
 //
-//  KeyIdentityCustomView.swift
+//  CustomButton.swift
 //  IBDesignable
 //
 //  Created by melisa öztürk on 4.10.2021.
@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class KeyIdentityCustomView: UIButton {
+class CustomButton: UIButton {
     
     @IBInspectable
     var color: UIColor = .white {
@@ -40,7 +40,7 @@ class KeyIdentityCustomView: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureView()
+        configureButton()
     }
     
     required init?(coder: NSCoder) {
@@ -48,10 +48,11 @@ class KeyIdentityCustomView: UIButton {
     }
     
     override func prepareForInterfaceBuilder() {
-        configureView()
+        super.prepareForInterfaceBuilder()
+        configureButton()
     }
     
-    private func configureView() {
+    private func configureButton() {
         self.backgroundColor = color
         self.layer.cornerRadius = cornerRadius
         self.layer.borderWidth = borderWidth

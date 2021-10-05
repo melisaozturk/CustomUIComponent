@@ -1,5 +1,5 @@
 //
-//  IBDesignableVC.swift
+//  CustomViewVC.swift
 //  IBDesignable
 //
 //  Created by melisa öztürk on 4.10.2021.

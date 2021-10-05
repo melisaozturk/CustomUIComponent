@@ -16,6 +16,11 @@
 		1E952E14270AED4200A73043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E952E12270AED4200A73043 /* LaunchScreen.storyboard */; };
 		1E952E1F270AED4300A73043 /* IBDesignableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E1E270AED4300A73043 /* IBDesignableTests.swift */; };
 		1E952E2A270AED4300A73043 /* IBDesignableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E29270AED4300A73043 /* IBDesignableUITests.swift */; };
+		1E952E3C270B2BDF00A73043 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E3B270B2BDF00A73043 /* CustomView.swift */; };
+		1E952E40270B30D900A73043 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E3F270B30D900A73043 /* CustomButton.swift */; };
+		1E952E44270B5CE200A73043 /* CustomViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E43270B5CE200A73043 /* CustomViewVC.swift */; };
+		1E952E46270B5D1000A73043 /* CustomButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E45270B5D0F00A73043 /* CustomButtonVC.swift */; };
+		1E952E48270B648900A73043 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E952E47270B648900A73043 /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		1E952E25270AED4300A73043 /* IBDesignableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBDesignableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E952E29270AED4300A73043 /* IBDesignableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableUITests.swift; sourceTree = "<group>"; };
 		1E952E2B270AED4300A73043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E952E3B270B2BDF00A73043 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		1E952E3F270B30D900A73043 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1E952E43270B5CE200A73043 /* CustomViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewVC.swift; sourceTree = "<group>"; };
+		1E952E45270B5D0F00A73043 /* CustomButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonVC.swift; sourceTree = "<group>"; };
+		1E952E47270B648900A73043 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +111,10 @@
 		1E952E03270AED4100A73043 /* IBDesignable */ = {
 			isa = PBXGroup;
 			children = (
-				1E952E04270AED4100A73043 /* AppDelegate.swift */,
-				1E952E06270AED4100A73043 /* SceneDelegate.swift */,
-				1E952E08270AED4100A73043 /* ViewController.swift */,
-				1E952E0A270AED4100A73043 /* Main.storyboard */,
-				1E952E10270AED4200A73043 /* Assets.xcassets */,
-				1E952E12270AED4200A73043 /* LaunchScreen.storyboard */,
+				1E952E3D270B2C0200A73043 /* Source */,
+				1E952E38270B2BBC00A73043 /* ViewController */,
+				1E952E37270B2BB700A73043 /* Custom */,
 				1E952E15270AED4200A73043 /* Info.plist */,
-				1E952E0D270AED4100A73043 /* IBDesignable.xcdatamodeld */,
 			);
 			path = IBDesignable;
 			sourceTree = "<group>";
@@ -129,6 +135,39 @@
 				1E952E2B270AED4300A73043 /* Info.plist */,
 			);
 			path = IBDesignableUITests;
+			sourceTree = "<group>";
+		};
+		1E952E37270B2BB700A73043 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1E952E3F270B30D900A73043 /* CustomButton.swift */,
+				1E952E3B270B2BDF00A73043 /* CustomView.swift */,
+				1E952E47270B648900A73043 /* CustomLabel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1E952E38270B2BBC00A73043 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E952E0A270AED4100A73043 /* Main.storyboard */,
+				1E952E08270AED4100A73043 /* ViewController.swift */,
+				1E952E43270B5CE200A73043 /* CustomViewVC.swift */,
+				1E952E45270B5D0F00A73043 /* CustomButtonVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1E952E3D270B2C0200A73043 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1E952E04270AED4100A73043 /* AppDelegate.swift */,
+				1E952E06270AED4100A73043 /* SceneDelegate.swift */,
+				1E952E10270AED4200A73043 /* Assets.xcassets */,
+				1E952E12270AED4200A73043 /* LaunchScreen.storyboard */,
+				1E952E0D270AED4100A73043 /* IBDesignable.xcdatamodeld */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E952E3C270B2BDF00A73043 /* CustomView.swift in Sources */,
+				1E952E48270B648900A73043 /* CustomLabel.swift in Sources */,
+				1E952E40270B30D900A73043 /* CustomButton.swift in Sources */,
+				1E952E46270B5D1000A73043 /* CustomButtonVC.swift in Sources */,
+				1E952E44270B5CE200A73043 /* CustomViewVC.swift in Sources */,
 				1E952E09270AED4100A73043 /* ViewController.swift in Sources */,
 				1E952E05270AED4100A73043 /* AppDelegate.swift in Sources */,
 				1E952E0F270AED4100A73043 /* IBDesignable.xcdatamodeld in Sources */,

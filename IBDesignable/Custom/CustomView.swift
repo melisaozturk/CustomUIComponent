@@ -48,6 +48,7 @@ class CustomView: UIView {
     }
     
     override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
         configureView()
     }
     

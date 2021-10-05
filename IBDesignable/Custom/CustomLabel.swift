@@ -7,14 +7,57 @@
 
 import UIKit
 
+@IBDesignable
 class CustomLabel: UILabel {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    @IBInspectable
+    var color: UIColor = .orange {
+        didSet {
+            self.backgroundColor = color
+        }
     }
-    */
-
+    
+    @IBInspectable
+    var cornerRadius: CGFloat = 10 {
+        didSet {
+            self.layer.masksToBounds = true
+            self.layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    @IBInspectable
+    var borderWidth: CGFloat = 2 {
+        didSet {
+            self.layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable
+    var borderColor: UIColor = .green {
+        didSet {
+            self.layer.borderColor = borderColor.cgColor
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configureLabel()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        configureLabel()
+    }
+    
+    private func configureLabel() {
+        self.backgroundColor = color
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderWidth = borderWidth
+        self.layer.borderColor = borderColor.cgColor
+    }
+    
 }
